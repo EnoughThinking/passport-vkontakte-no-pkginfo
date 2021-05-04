@@ -1,5 +1,5 @@
 {
-    "name": "passport-vkontakte-examples-login",
+    "name": "passport-vkontakte-no-pkginfo-examples-login",
     "version": "0.0.0",
     "dependencies": {
         "body-parser": "^1.18.2",

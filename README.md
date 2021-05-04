@@ -1,6 +1,6 @@
-# Passport-VKontakte
+# passport-vkontakte-no-pkginfo
 
-[![Build Status](https://secure.travis-ci.org/stevebest/passport-vkontakte.png)][travis-build-status]
+[![Build Status](https://secure.travis-ci.org/endykaufman/passport-vkontakte-no-pkginfo.png)][travis-build-status]
 
 [Passport][passport-js] strategy for authenticating with [VK][vk] using the OAuth 2.0 API.
 
@@ -11,7 +11,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Installation
 
-    $ npm install passport-vkontakte
+    $ npm install passport-vkontakte-no-pkginfo
 
 ## Usage
 
@@ -23,7 +23,7 @@ access their data, given their access permission.
 In order to be used, a strategy must be configured with two parameters.
 
 ```javascript
-import Strategy as VKStrategy from "passport-vkontakte";
+import Strategy as VKStrategy from "passport-vkontakte-no-pkginfo";
 passport.use(new VKStrategy(options, verify));
 ```
 
@@ -100,7 +100,7 @@ return done(new Error("User database is not available, try later"));
 ```
 
 ```javascript
-const VKontakteStrategy = require("passport-vkontakte").Strategy;
+const VKontakteStrategy = require("passport-vkontakte-no-pkginfo").Strategy;
 
 // User session support middlewares. Your exact suite might vary depending on your app's needs.
 app.use(require("cookie-parser")());
@@ -285,7 +285,7 @@ passport.use(
 ## Credits
 
 -   [Jared Hanson](http://github.com/jaredhanson)
--   [Stepan Stolyarov](http://github.com/stevebest)
+-   [Stepan Stolyarov](http://github.com/endykaufman)
 
 ## Special Thanks
 
@@ -320,6 +320,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [vk]: https://www.vk.com/
 [connect]: http://www.senchalabs.org/connect/
 [express]: http://expressjs.com/
-[travis-build-status]: http://travis-ci.org/stevebest/passport-vkontakte
+[travis-build-status]: http://travis-ci.org/endykaufman/passport-vkontakte-no-pkginfo
 [oauth2-access-token]: https://tools.ietf.org/html/rfc6749#section-1.4
 [oauth2-refresh-token]: https://tools.ietf.org/html/rfc6749#section-1.5
